@@ -1,0 +1,17 @@
+[0.750s] Invoking command in '/root/Project/ros_ur_dashboard2mqtt/build/ur_dshbd_command': PYTHONPATH=/root/Project/ros_ur_dashboard2mqtt/build/ur_dshbd_command/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /root/Project/ros_ur_dashboard2mqtt/build/ur_dshbd_command/build --no-deps symlink_data
+[1.048s] running develop
+[1.235s] running egg_info
+[1.235s] writing ur_dshbd_command.egg-info/PKG-INFO
+[1.235s] writing dependency_links to ur_dshbd_command.egg-info/dependency_links.txt
+[1.235s] writing entry points to ur_dshbd_command.egg-info/entry_points.txt
+[1.236s] writing requirements to ur_dshbd_command.egg-info/requires.txt
+[1.236s] writing top-level names to ur_dshbd_command.egg-info/top_level.txt
+[1.238s] reading manifest file 'ur_dshbd_command.egg-info/SOURCES.txt'
+[1.239s] writing manifest file 'ur_dshbd_command.egg-info/SOURCES.txt'
+[1.240s] running build_ext
+[1.240s] Creating /root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command/lib/python3.10/site-packages/ur-dshbd-command.egg-link (link to .)
+[1.241s] Installing commander script to /root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command/lib/ur_dshbd_command
+[1.241s] 
+[1.241s] Installed /root/Project/ros_ur_dashboard2mqtt/build/ur_dshbd_command
+[1.241s] running symlink_data
+[1.275s] Invoked command in '/root/Project/ros_ur_dashboard2mqtt/build/ur_dshbd_command' returned '0': PYTHONPATH=/root/Project/ros_ur_dashboard2mqtt/build/ur_dshbd_command/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /root/Project/ros_ur_dashboard2mqtt/build/ur_dshbd_command/build --no-deps symlink_data

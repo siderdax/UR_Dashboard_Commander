@@ -1,0 +1,24 @@
+[1.024s] Invoking command in '/root/Project/ros_ur_dashboard2mqtt/build/ur_dshbd_command': PYTHONPATH=/root/Project/ros_ur_dashboard2mqtt/build/ur_dshbd_command/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /root/Project/ros_ur_dashboard2mqtt/build/ur_dshbd_command/build --no-deps symlink_data
+[1.312s] running develop
+[1.495s] running egg_info
+[1.495s] creating ur_dshbd_command.egg-info
+[1.512s] writing ur_dshbd_command.egg-info/PKG-INFO
+[1.512s] writing dependency_links to ur_dshbd_command.egg-info/dependency_links.txt
+[1.512s] writing entry points to ur_dshbd_command.egg-info/entry_points.txt
+[1.512s] writing requirements to ur_dshbd_command.egg-info/requires.txt
+[1.512s] writing top-level names to ur_dshbd_command.egg-info/top_level.txt
+[1.513s] writing manifest file 'ur_dshbd_command.egg-info/SOURCES.txt'
+[1.513s] reading manifest file 'ur_dshbd_command.egg-info/SOURCES.txt'
+[1.513s] writing manifest file 'ur_dshbd_command.egg-info/SOURCES.txt'
+[1.513s] running build_ext
+[1.513s] Creating /root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command/lib/python3.10/site-packages/ur-dshbd-command.egg-link (link to .)
+[1.513s] Installing commander script to /root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command/lib/ur_dshbd_command
+[1.513s] 
+[1.513s] Installed /root/Project/ros_ur_dashboard2mqtt/build/ur_dshbd_command
+[1.513s] running symlink_data
+[1.513s] creating /root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command/share/ament_index
+[1.513s] creating /root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command/share/ament_index/resource_index
+[1.513s] creating /root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command/share/ament_index/resource_index/packages
+[1.513s] symbolically linking /root/Project/ros_ur_dashboard2mqtt/build/ur_dshbd_command/resource/ur_dshbd_command -> /root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command/share/ament_index/resource_index/packages
+[1.513s] symbolically linking /root/Project/ros_ur_dashboard2mqtt/build/ur_dshbd_command/package.xml -> /root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command/share/ur_dshbd_command
+[1.565s] Invoked command in '/root/Project/ros_ur_dashboard2mqtt/build/ur_dshbd_command' returned '0': PYTHONPATH=/root/Project/ros_ur_dashboard2mqtt/build/ur_dshbd_command/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /root/Project/ros_ur_dashboard2mqtt/build/ur_dshbd_command/build --no-deps symlink_data

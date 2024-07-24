@@ -1,0 +1,7 @@
+{
+  "package_name": "ur_dshbd_msgs",
+  "non_idl_tuples": [
+    "/root/Project/ros_ur_dashboard2mqtt/src/ur_dshbd_msgs:msg/Command.msg",
+    "/root/Project/ros_ur_dashboard2mqtt/src/ur_dshbd_msgs:msg/Result.msg"
+  ]
+}

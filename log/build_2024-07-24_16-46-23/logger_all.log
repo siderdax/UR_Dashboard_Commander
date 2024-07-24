@@ -1,0 +1,205 @@
+[0.126s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.126s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7fbaf480a5f0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fbaf48feb90>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fbaf48feb90>>, mixin_verb=('build',))
+[0.284s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.284s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.284s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.284s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.284s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.284s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.284s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/root/Project/ros_ur_dashboard2mqtt'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.295s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_dshbd_command) by extensions ['ignore', 'ignore_ament_install']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_dshbd_command) by extension 'ignore'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_dshbd_command) by extension 'ignore_ament_install'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_dshbd_command) by extensions ['colcon_pkg']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_dshbd_command) by extension 'colcon_pkg'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_dshbd_command) by extensions ['colcon_meta']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_dshbd_command) by extension 'colcon_meta'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_dshbd_command) by extensions ['ros']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_dshbd_command) by extension 'ros'
+[0.298s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ur_dshbd_command' with type 'ros.ament_python' and name 'ur_dshbd_command'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_dshbd_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_dshbd_msgs) by extension 'ignore'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_dshbd_msgs) by extension 'ignore_ament_install'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_dshbd_msgs) by extensions ['colcon_pkg']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_dshbd_msgs) by extension 'colcon_pkg'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_dshbd_msgs) by extensions ['colcon_meta']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_dshbd_msgs) by extension 'colcon_meta'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_dshbd_msgs) by extensions ['ros']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_dshbd_msgs) by extension 'ros'
+[0.300s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ur_dshbd_msgs' with type 'ros.ament_cmake' and name 'ur_dshbd_msgs'
+[0.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.301s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.319s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.319s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.323s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /root/Project/ros_ur_dashboard2mqtt/install
+[0.325s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 382 installed packages in /opt/ros/humble
+[0.326s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'ur_dshbd_msgs' build argument 'cmake_args' from command line to 'None'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'ur_dshbd_msgs' build argument 'cmake_target' from command line to 'None'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'ur_dshbd_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'ur_dshbd_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'ur_dshbd_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'ur_dshbd_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'ur_dshbd_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'ur_dshbd_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'ur_dshbd_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.387s] DEBUG:colcon.colcon_core.verb:Building package 'ur_dshbd_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/Project/ros_ur_dashboard2mqtt/build/ur_dshbd_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs', 'merge_install': False, 'path': '/root/Project/ros_ur_dashboard2mqtt/src/ur_dshbd_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'ur_dshbd_command' build argument 'cmake_args' from command line to 'None'
+[0.387s] Level 5:colcon.colcon_core.verb:set package 'ur_dshbd_command' build argument 'cmake_target' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'ur_dshbd_command' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'ur_dshbd_command' build argument 'cmake_clean_cache' from command line to 'False'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'ur_dshbd_command' build argument 'cmake_clean_first' from command line to 'False'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'ur_dshbd_command' build argument 'cmake_force_configure' from command line to 'False'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'ur_dshbd_command' build argument 'ament_cmake_args' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'ur_dshbd_command' build argument 'catkin_cmake_args' from command line to 'None'
+[0.388s] Level 5:colcon.colcon_core.verb:set package 'ur_dshbd_command' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.388s] DEBUG:colcon.colcon_core.verb:Building package 'ur_dshbd_command' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/Project/ros_ur_dashboard2mqtt/build/ur_dshbd_command', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command', 'merge_install': False, 'path': '/root/Project/ros_ur_dashboard2mqtt/src/ur_dshbd_command', 'symlink_install': True, 'test_result_base': None}
+[0.388s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.389s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.389s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/Project/ros_ur_dashboard2mqtt/src/ur_dshbd_msgs' with build type 'ament_cmake'
+[0.389s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/Project/ros_ur_dashboard2mqtt/src/ur_dshbd_msgs'
+[0.394s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.394s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.394s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.403s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/Project/ros_ur_dashboard2mqtt/build/ur_dshbd_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command:/opt/ros/humble /usr/bin/cmake --build /root/Project/ros_ur_dashboard2mqtt/build/ur_dshbd_msgs -- -j6 -l6
+[0.851s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/Project/ros_ur_dashboard2mqtt/build/ur_dshbd_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command:/opt/ros/humble /usr/bin/cmake --build /root/Project/ros_ur_dashboard2mqtt/build/ur_dshbd_msgs -- -j6 -l6
+[0.941s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/Project/ros_ur_dashboard2mqtt/build/ur_dshbd_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command:/opt/ros/humble /usr/bin/cmake --install /root/Project/ros_ur_dashboard2mqtt/build/ur_dshbd_msgs
+[1.063s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur_dshbd_msgs)
+[1.064s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/Project/ros_ur_dashboard2mqtt/build/ur_dshbd_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command:/opt/ros/humble /usr/bin/cmake --install /root/Project/ros_ur_dashboard2mqtt/build/ur_dshbd_msgs
+[1.069s] Level 1:colcon.colcon_core.environment:checking '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs' for CMake module files
+[1.070s] Level 1:colcon.colcon_core.environment:checking '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs' for CMake config files
+[1.070s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur_dshbd_msgs', 'cmake_prefix_path')
+[1.070s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs/share/ur_dshbd_msgs/hook/cmake_prefix_path.ps1'
+[1.072s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs/share/ur_dshbd_msgs/hook/cmake_prefix_path.dsv'
+[1.072s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs/share/ur_dshbd_msgs/hook/cmake_prefix_path.sh'
+[1.073s] Level 1:colcon.colcon_core.environment:checking '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs/lib'
+[1.074s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur_dshbd_msgs', 'ld_library_path_lib')
+[1.074s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs/share/ur_dshbd_msgs/hook/ld_library_path_lib.ps1'
+[1.074s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs/share/ur_dshbd_msgs/hook/ld_library_path_lib.dsv'
+[1.075s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs/share/ur_dshbd_msgs/hook/ld_library_path_lib.sh'
+[1.075s] Level 1:colcon.colcon_core.environment:checking '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs/bin'
+[1.075s] Level 1:colcon.colcon_core.environment:checking '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs/lib/pkgconfig/ur_dshbd_msgs.pc'
+[1.075s] Level 1:colcon.colcon_core.environment:checking '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs/lib/python3.10/site-packages'
+[1.075s] Level 1:colcon.colcon_core.environment:checking '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs/bin'
+[1.076s] INFO:colcon.colcon_core.shell:Creating package script '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs/share/ur_dshbd_msgs/package.ps1'
+[1.077s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs/share/ur_dshbd_msgs/package.dsv'
+[1.078s] INFO:colcon.colcon_core.shell:Creating package script '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs/share/ur_dshbd_msgs/package.sh'
+[1.079s] INFO:colcon.colcon_core.shell:Creating package script '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs/share/ur_dshbd_msgs/package.bash'
+[1.080s] INFO:colcon.colcon_core.shell:Creating package script '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs/share/ur_dshbd_msgs/package.zsh'
+[1.081s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs/share/colcon-core/packages/ur_dshbd_msgs)
+[1.175s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur_dshbd_msgs)
+[1.175s] Level 1:colcon.colcon_core.environment:checking '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs' for CMake module files
+[1.176s] Level 1:colcon.colcon_core.environment:checking '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs' for CMake config files
+[1.176s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur_dshbd_msgs', 'cmake_prefix_path')
+[1.181s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs/share/ur_dshbd_msgs/hook/cmake_prefix_path.ps1'
+[1.183s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs/share/ur_dshbd_msgs/hook/cmake_prefix_path.dsv'
+[1.184s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs/share/ur_dshbd_msgs/hook/cmake_prefix_path.sh'
+[1.185s] Level 1:colcon.colcon_core.environment:checking '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs/lib'
+[1.185s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur_dshbd_msgs', 'ld_library_path_lib')
+[1.185s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs/share/ur_dshbd_msgs/hook/ld_library_path_lib.ps1'
+[1.186s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs/share/ur_dshbd_msgs/hook/ld_library_path_lib.dsv'
+[1.186s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs/share/ur_dshbd_msgs/hook/ld_library_path_lib.sh'
+[1.187s] Level 1:colcon.colcon_core.environment:checking '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs/bin'
+[1.187s] Level 1:colcon.colcon_core.environment:checking '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs/lib/pkgconfig/ur_dshbd_msgs.pc'
+[1.187s] Level 1:colcon.colcon_core.environment:checking '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs/lib/python3.10/site-packages'
+[1.187s] Level 1:colcon.colcon_core.environment:checking '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs/bin'
+[1.188s] INFO:colcon.colcon_core.shell:Creating package script '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs/share/ur_dshbd_msgs/package.ps1'
+[1.188s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs/share/ur_dshbd_msgs/package.dsv'
+[1.189s] INFO:colcon.colcon_core.shell:Creating package script '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs/share/ur_dshbd_msgs/package.sh'
+[1.189s] INFO:colcon.colcon_core.shell:Creating package script '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs/share/ur_dshbd_msgs/package.bash'
+[1.190s] INFO:colcon.colcon_core.shell:Creating package script '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs/share/ur_dshbd_msgs/package.zsh'
+[1.190s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_msgs/share/colcon-core/packages/ur_dshbd_msgs)
+[1.191s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/root/Project/ros_ur_dashboard2mqtt/src/ur_dshbd_command' with build type 'ament_python'
+[1.191s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur_dshbd_command', 'ament_prefix_path')
+[1.191s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command/share/ur_dshbd_command/hook/ament_prefix_path.ps1'
+[1.192s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command/share/ur_dshbd_command/hook/ament_prefix_path.dsv'
+[1.192s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command/share/ur_dshbd_command/hook/ament_prefix_path.sh'
+[1.193s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.193s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.542s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/root/Project/ros_ur_dashboard2mqtt/src/ur_dshbd_command'
+[1.542s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.542s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.234s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/Project/ros_ur_dashboard2mqtt/build/ur_dshbd_command': PYTHONPATH=/root/Project/ros_ur_dashboard2mqtt/build/ur_dshbd_command/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /root/Project/ros_ur_dashboard2mqtt/build/ur_dshbd_command/build --no-deps symlink_data
+[2.719s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur_dshbd_command', 'pythonpath_develop')
+[2.720s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/Project/ros_ur_dashboard2mqtt/build/ur_dshbd_command/share/ur_dshbd_command/hook/pythonpath_develop.ps1'
+[2.720s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/Project/ros_ur_dashboard2mqtt/build/ur_dshbd_command' returned '0': PYTHONPATH=/root/Project/ros_ur_dashboard2mqtt/build/ur_dshbd_command/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /root/Project/ros_ur_dashboard2mqtt/build/ur_dshbd_command/build --no-deps symlink_data
+[2.720s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/Project/ros_ur_dashboard2mqtt/build/ur_dshbd_command/share/ur_dshbd_command/hook/pythonpath_develop.dsv'
+[2.721s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/Project/ros_ur_dashboard2mqtt/build/ur_dshbd_command/share/ur_dshbd_command/hook/pythonpath_develop.sh'
+[2.721s] Level 1:colcon.colcon_core.environment:checking '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command' for CMake module files
+[2.722s] Level 1:colcon.colcon_core.environment:checking '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command' for CMake config files
+[2.722s] Level 1:colcon.colcon_core.environment:checking '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command/lib'
+[2.722s] Level 1:colcon.colcon_core.environment:checking '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command/bin'
+[2.722s] Level 1:colcon.colcon_core.environment:checking '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command/lib/pkgconfig/ur_dshbd_command.pc'
+[2.723s] Level 1:colcon.colcon_core.environment:checking '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command/lib/python3.10/site-packages'
+[2.723s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur_dshbd_command', 'pythonpath')
+[2.723s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command/share/ur_dshbd_command/hook/pythonpath.ps1'
+[2.723s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command/share/ur_dshbd_command/hook/pythonpath.dsv'
+[2.723s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command/share/ur_dshbd_command/hook/pythonpath.sh'
+[2.724s] Level 1:colcon.colcon_core.environment:checking '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command/bin'
+[2.724s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur_dshbd_command)
+[2.724s] INFO:colcon.colcon_core.shell:Creating package script '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command/share/ur_dshbd_command/package.ps1'
+[2.725s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command/share/ur_dshbd_command/package.dsv'
+[2.725s] INFO:colcon.colcon_core.shell:Creating package script '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command/share/ur_dshbd_command/package.sh'
+[2.726s] INFO:colcon.colcon_core.shell:Creating package script '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command/share/ur_dshbd_command/package.bash'
+[2.726s] INFO:colcon.colcon_core.shell:Creating package script '/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command/share/ur_dshbd_command/package.zsh'
+[2.727s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/Project/ros_ur_dashboard2mqtt/install/ur_dshbd_command/share/colcon-core/packages/ur_dshbd_command)
+[2.727s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.727s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.728s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.728s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.734s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[2.734s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.734s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.734s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.745s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[2.745s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.746s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/Project/ros_ur_dashboard2mqtt/install/local_setup.ps1'
+[2.747s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/Project/ros_ur_dashboard2mqtt/install/_local_setup_util_ps1.py'
+[2.748s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/Project/ros_ur_dashboard2mqtt/install/setup.ps1'
+[2.749s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/Project/ros_ur_dashboard2mqtt/install/local_setup.sh'
+[2.750s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/Project/ros_ur_dashboard2mqtt/install/_local_setup_util_sh.py'
+[2.751s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/Project/ros_ur_dashboard2mqtt/install/setup.sh'
+[2.752s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/Project/ros_ur_dashboard2mqtt/install/local_setup.bash'
+[2.753s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/Project/ros_ur_dashboard2mqtt/install/setup.bash'
+[2.754s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/Project/ros_ur_dashboard2mqtt/install/local_setup.zsh'
+[2.754s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/Project/ros_ur_dashboard2mqtt/install/setup.zsh'
