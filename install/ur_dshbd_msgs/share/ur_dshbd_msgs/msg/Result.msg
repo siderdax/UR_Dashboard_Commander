@@ -1,1 +1,0 @@
-/root/Project/ros_ur_dashboard2mqtt/src/ur_dshbd_msgs/msg/Result.msg

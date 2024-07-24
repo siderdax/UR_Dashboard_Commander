@@ -1,3 +1,0 @@
-[console_scripts]
-commander = ur_dshbd_command.dashboard_commander:main
-
