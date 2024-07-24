@@ -27,10 +27,10 @@ class DashboardCommander(Node):
         "result_topic": "urDashboardResult",
     }
     mqttc_thread = None
-    clients = None
+    service_clients = None
 
     def __init__(self):
-        super(DashboardCommander, self).__init__("dashbd_command")
+        super().__init__("dashbd_command")
         self.mqttc = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2)
         self.mqttc.on_connect = self.on_connect
         self.mqttc.on_disconnect = self.on_disconnect
@@ -39,11 +39,11 @@ class DashboardCommander(Node):
         self.mqttc.on_unsubscribe = self.on_unsubscribe
         self.add_on_set_parameters_callback(self.on_set_parameters)
         self.declare_parameter("mqtt_config.host", "localhost")
-        self.declare_parameter("mqtt_config.port", 1884)
+        self.declare_parameter("mqtt_config.port", 1883)
         self.declare_parameter("mqtt_config.command_topic", "urDashboardCommand")
         self.declare_parameter("mqtt_config.result_topic", "urDashboardResult")
 
-        self.clients = {
+        self.service_clients = {
             "brake_release": self.create_client(
                 Trigger, "/dashboard_client/brake_release"
             ),
@@ -101,9 +101,14 @@ class DashboardCommander(Node):
             ),
         }
 
+        for key, cli in self.service_clients.items():
+            while not cli.wait_for_service(timeout_sec=1.0):
+                self.get_logger().info(
+                    key + ": service not available, waiting again..."
+                )
+
         self.mqttc_thread = threading.Thread(target=self.mqtt_loop)
         self.mqttc_thread.start()
-        self.mqttc_thread.join()
 
     def on_set_parameters(self, params: List[Parameter]):
         for param in params:
@@ -159,15 +164,15 @@ class DashboardCommander(Node):
         json_dict = json.loads(msg.payload.decode("utf-8"))
         command = json_dict["command"]
 
-        if command in self.clients:
+        if command in self.service_clients:
             future = self.send_request(command, json_dict["data"])
 
             def done(future):
-                try:
-                    self.get_logger().info(str(future.result()))
-                except Exception as ex:
-                    self.get_logger().info(str(ex))
-                    pass
+                self.get_logger().info(str(future.result()))
+                self.mqttc.publish(
+                    self.mqtt_config["result_topic"],
+                    json.dumps(future.result()._fields_and_field_types),
+                )
 
             future.add_done_callback(done)
 
@@ -208,18 +213,14 @@ class DashboardCommander(Node):
         else:
             return Trigger.Request()
 
-    def send_request(self, cmd, data, timeout_sec=3.0) -> Future:
-        if not cmd in self.clients:
+    def send_request(self, cmd, data) -> Future:
+        if not cmd in self.service_clients:
             self.get_logger().error(cmd + " command is not available.")
             return None
 
-        cli = self.clients[cmd]
-
-        if not cli.wait_for_service(timeout_sec):
-            self.get_logger().info(cmd + ": cannot find service")
-
+        cli = self.service_clients[cmd]
         req = self.create_request(cmd, data)
-        return cli.call(req)
+        return cli.call_async(req)
 
     def mqtt_loop(self):
         while self.is_done == False:
@@ -235,8 +236,8 @@ class DashboardCommander(Node):
             time.sleep(1)
 
 
-def main(args=None):
-    rclpy.init(args=args)
+def main():
+    rclpy.init()
     dshbd_commander = DashboardCommander()
     rclpy.spin(dshbd_commander)
     dshbd_commander.is_done = True
