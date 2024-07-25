@@ -39,7 +39,7 @@ class DashboardCommander(Node):
         self.mqttc.on_unsubscribe = self.on_unsubscribe
         self.add_on_set_parameters_callback(self.on_set_parameters)
         self.declare_parameter("mqtt_config.host", "localhost")
-        self.declare_parameter("mqtt_config.port", 1884)
+        self.declare_parameter("mqtt_config.port", 1883)
         self.declare_parameter("mqtt_config.command_topic", "urDashboardCommand")
         self.declare_parameter("mqtt_config.result_topic", "urDashboardResult")
 
