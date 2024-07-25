@@ -39,7 +39,7 @@ class DashboardCommander(Node):
         self.mqttc.on_unsubscribe = self.on_unsubscribe
         self.add_on_set_parameters_callback(self.on_set_parameters)
         self.declare_parameter("mqtt_config.host", "localhost")
-        self.declare_parameter("mqtt_config.port", 1883)
+        self.declare_parameter("mqtt_config.port", 1884)
         self.declare_parameter("mqtt_config.command_topic", "urDashboardCommand")
         self.declare_parameter("mqtt_config.result_topic", "urDashboardResult")
 
@@ -161,25 +161,36 @@ class DashboardCommander(Node):
 
     def on_message(self, client, userdata, msg):
         self.get_logger().info(msg.topic + " " + str(msg.payload))
-        json_dict = json.loads(msg.payload.decode("utf-8"))
-        command = json_dict["command"]
+        try:
+            json_dict = json.loads(msg.payload.decode("utf-8"))
+            command = json_dict["command"]
 
-        if command in self.service_clients:
-            future = self.send_request(command, json_dict["data"])
+            if command in self.service_clients:
+                future = self.send_request(command, json_dict["data"])
 
-            def done(future: Future):
-                res = future.result()
-                res_dict = {}
+                def done(future: Future):
+                    res = future.result()
+                    res_dict = {}
 
-                for key in res._fields_and_field_types.keys():
-                    res_dict[key] = getattr(res, key)
+                    for key in res._fields_and_field_types.keys():
+                        attr = getattr(res, key)
+                        attr_type = type(attr)
+                        if (
+                            attr_type is str
+                            or attr_type is float
+                            or attr_type is int
+                            or attr_type is bool
+                        ):
+                            res_dict[key] = attr
 
-                self.get_logger().info(str(future.result()))
-                self.mqttc.publish(
-                    self.mqtt_config["result_topic"], json.dumps(res_dict)
-                )
+                    self.get_logger().info(str(future.result()))
+                    self.mqttc.publish(
+                        self.mqtt_config["result_topic"], json.dumps(res_dict)
+                    )
 
-            future.add_done_callback(done)
+                future.add_done_callback(done)
+        except:
+            pass
 
     def create_request(self, cmd, data):
         if cmd == "get_loaded_program":
