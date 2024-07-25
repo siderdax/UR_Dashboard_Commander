@@ -167,11 +167,16 @@ class DashboardCommander(Node):
         if command in self.service_clients:
             future = self.send_request(command, json_dict["data"])
 
-            def done(future):
+            def done(future: Future):
+                res = future.result()
+                res_dict = {}
+
+                for key in res._fields_and_field_types.keys():
+                    res_dict[key] = getattr(res, key)
+
                 self.get_logger().info(str(future.result()))
                 self.mqttc.publish(
-                    self.mqtt_config["result_topic"],
-                    json.dumps(future.result()._fields_and_field_types),
+                    self.mqtt_config["result_topic"], json.dumps(res_dict)
                 )
 
             future.add_done_callback(done)
